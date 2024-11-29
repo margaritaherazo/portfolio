@@ -16,7 +16,7 @@ const NavBar = () => {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="navbar-nav">
-        <Nav className="ms-auto align-items-center">
+        <Nav className="ms-auto align-items-center justify-content-end w-100r">
           <div className="language-selector">
             <span
               className={`lang ${selectedLang === 'en' ? 'active' : ''}`}

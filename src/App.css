@@ -54,7 +54,9 @@ body {
 
 .navbar {
   position: fixed  !important;
-  z-index: 9999 !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo {
@@ -65,6 +67,8 @@ body {
 .navbar-nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end; 
+  width: 100%;
 }
 
 
