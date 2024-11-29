@@ -18,23 +18,23 @@ function App() {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener when the component is unmounted
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  // Calculate the gradient position based on scroll position
+  
   const gradientPosition = (scrollPosition / document.body.scrollHeight) * 100;
 
   return (
     <div
       style={{
-        background: 'linear-gradient(45deg, #ff7e5f, #feb47b, #6a11cb, #2575fc)',
+        background: 'linear-gradient(45deg, yellow, darkorange, #6a11cb, #2575fc)',
         backgroundSize: '400% 400%',
         backgroundPosition: `${gradientPosition}% 50%`,
-        transition: 'background-position 0.1s ease-out',
-        minHeight: '100vh', // Ensures the body covers at least the full viewport height
+        transition: 'background-position 0.2s ease-out',
+        minHeight: '100vh', 
       }}
     >
       <Hero />
