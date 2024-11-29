@@ -16,8 +16,9 @@ function About() {
                         <h2>Web Designer</h2>
                         <h2>Creative Developer</h2>
                         <p>
-                            I am a passionate Front-End Developer with a knack for creating user-friendly and visually appealing websites.
+                           Creating professional Websites with a personal and esay going touch, i have being working in different countries from branding and desing to developing and coding.   
                         </p>
+                        <h5>Based in Bahia, Brazil</h5>
                     </div>
                 </div>
             </div>
