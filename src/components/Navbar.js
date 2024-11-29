@@ -10,7 +10,7 @@ const NavBar = () => {
   };
 
   return (
-    <Navbar className='navbar'>
+    <Navbar expand="lg" className="navbar">
       <Navbar.Brand href="#home">
         <img src="/assets/imgs/logo1.png" alt="Logo" className="logo" />
       </Navbar.Brand>

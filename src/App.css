@@ -53,8 +53,8 @@ body {
 /* Navbar */
 
 .navbar {
-  position: relative;
-  z-index: 9999;
+  position: relative  !important;
+  z-index: 9999 !important;
 }
 
 .logo {
