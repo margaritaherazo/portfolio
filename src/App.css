@@ -53,7 +53,7 @@ body {
 /* Navbar */
 
 .navbar {
-  position: relative  !important;
+  position: fixed  !important;
   z-index: 9999 !important;
 }
 
