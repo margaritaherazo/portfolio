@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero() {
     return (
-        <section className="hero bg-primary text-white text-center py-5">
+        <section >
             <div className="container">
                 <h1>Welcome to My Portfolio</h1>
                 <p className="lead">I’m a Front-End Developer specializing in building beautiful, responsive websites.</p>
