@@ -56,7 +56,7 @@ body {
 }
 
 .logo {
-  height: 40px; 
+  height: 80px; 
 }
 
 .navbar-nav {
@@ -75,3 +75,5 @@ body {
 .navbar-toggler {
   border: none;
 }
+
+

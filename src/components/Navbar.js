@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <Navbar>
       <Navbar.Brand href="#home">
-        <img src="/path-to-your-logo.png" alt="Logo" className="logo" />
+        <img src="/assets/imgs/logo1.png" alt="Logo" className="logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="navbar-nav">
