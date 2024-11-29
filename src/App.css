@@ -113,3 +113,39 @@ body {
   color: white;
   border-color: white;
 }
+
+/* About */
+
+#about {
+  padding: 4rem 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.custom-img {
+  max-width: 300px; 
+  width: 80%; 
+  height: auto; 
+  border-radius: 200px; 
+}
+
+.about-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
