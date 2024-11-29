@@ -2,12 +2,12 @@ import React from 'react';
 
 function Hero() {
     return (
-        <section >
-            <div className="container">
-                <h1>Welcome to My Portfolio</h1>
-                <p className="lead">I’m a Front-End Developer specializing in building beautiful, responsive websites.</p>
-                <a href="#portfolio" className="btn btn-light mt-3">View My Work</a>
-            </div>
+        <section className='hero' >
+         <div className="hero-content">
+          <h1 className="hero-title">Margarita Herazo</h1>
+          <h2 className="hero-subtitle">Portfolio ©2024</h2>
+          <p className="hero-text">Design * Development * Branding</p>
+         </div>
         </section>
     );
 }
