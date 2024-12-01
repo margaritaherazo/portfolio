@@ -1,9 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 
 const NavBar = () => {
-  const [selectedLang, setSelectedLang] = useState('en'); 
+  useEffect(() => {
+    const starContainer = document.querySelector('.falling-stars-container');
+
+    const createStar = () => {
+      const star = document.createElement('div');
+      star.classList.add('falling-star');
+
+      
+      const startX = Math.random() * window.innerWidth; 
+      const startY = Math.random() * window.innerHeight;
+
+      
+      const endX = startX + (Math.random() * 200 - 100); 
+      const endY = startY + (Math.random() * 200 - 100);
+
+      
+      star.style.left = `${startX}px`;
+      star.style.top = `${startY}px`;
+
+      
+      star.style.setProperty('--start-x', `${startX}px`);
+      star.style.setProperty('--start-y', `${startY}px`);
+      star.style.setProperty('--end-x', `${endX}px`);
+      star.style.setProperty('--end-y', `${endY}px`);
+
+      
+      starContainer.appendChild(star);
+
+      
+      setTimeout(() => star.remove(), 5000); 
+    };
+
+    
+    const starInterval = setInterval(createStar, 500);
+
+    
+    return () => clearInterval(starInterval);
+  }, []);
+
+  const [selectedLang, setSelectedLang] = useState('en');
 
   const handleLangSelect = (lang) => {
     setSelectedLang(lang);
@@ -13,6 +52,7 @@ const NavBar = () => {
     <Navbar expand="lg" className="navbar">
       <Navbar.Brand href="#home">
         <img src="/assets/imgs/logo1.png" alt="Logo" className="logo" />
+        <div className="falling-stars-container"></div>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbar-nav" />
       <Navbar.Collapse id="navbar-nav">

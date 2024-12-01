@@ -28,6 +28,20 @@ function App() {
   
   const gradientPosition = (scrollPosition / document.body.scrollHeight) * 100;
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const stars = document.querySelectorAll('.falling-star');
+      stars.forEach((star) => {
+        const scrollOffset = window.scrollY;
+        star.style.transform = `translateY(${scrollOffset * 0.1}px)`; // Adjust movement speed
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div
       style={{
