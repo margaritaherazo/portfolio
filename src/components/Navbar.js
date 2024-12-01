@@ -9,32 +9,39 @@ const NavBar = () => {
     const createStar = () => {
       const star = document.createElement('div');
       star.classList.add('falling-star');
-
       
-      const startX = Math.random() * window.innerWidth; 
-      const startY = Math.random() * window.innerHeight;
-
       
-      const endX = startX + (Math.random() * 200 - 100); 
-      const endY = startY + (Math.random() * 200 - 100);
-
+      const images = [
+        '/assets/imgs/tech1.png',
+        '/assets/imgs/tech2.png',
+        '/assets/imgs/tech3.png',
+        '/assets/imgs/tech4.png'
+      ];
+    
       
-      star.style.left = `${startX}px`;
-      star.style.top = `${startY}px`;
-
+      const randomImage = images[Math.floor(Math.random() * images.length)];
+    
       
-      star.style.setProperty('--start-x', `${startX}px`);
-      star.style.setProperty('--start-y', `${startY}px`);
-      star.style.setProperty('--end-x', `${endX}px`);
-      star.style.setProperty('--end-y', `${endY}px`);
-
+      const img = document.createElement('img');
+      img.src = randomImage; 
+      img.alt = 'Falling Star';
+      img.style.width = '100%'; 
+      img.style.height = '100%'; 
+    
+      
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+    
+      
+      star.appendChild(img);
+    
       
       starContainer.appendChild(star);
-
+    
       
       setTimeout(() => star.remove(), 5000); 
     };
-
+    
     
     const starInterval = setInterval(createStar, 500);
 
