@@ -16,7 +16,8 @@ const NavBar = () => {
         '/assets/imgs/tech2.png',
         '/assets/imgs/tech3.png',
         '/assets/imgs/tech4.png',
-        '/assets/imgs/tech5.png'
+        '/assets/imgs/tech5.png',
+        '/assets/imgs/logo1.png'
       ];
     
       
