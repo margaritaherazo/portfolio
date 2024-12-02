@@ -20,7 +20,8 @@ const NavBar = () => {
         '/assets/imgs/logo1.png',
         '/assets/imgs/tech6.png',
         '/assets/imgs/tech7.png',
-        '/assets/imgs/tech8.png'
+        '/assets/imgs/tech8.png',
+        '/assets/imgs/tech9.png'
       ];
     
       

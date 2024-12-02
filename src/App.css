@@ -133,7 +133,7 @@ body {
   height: 30px; 
   background: transparent;
   object-fit: cover;
-  animation:  move-star 12s linear forwards, spin-star 2s linear infinite;
+  animation:  move-star 15s linear forwards, spin-star 5s linear infinite;
   transform-origin: center;
 }
 
@@ -183,7 +183,8 @@ body {
   max-width: 300px; 
   width: 80%; 
   height: auto; 
-  border-radius: 200px; 
+  border-radius: 200px;
+  z-index: 1000; 
 }
 
 .about-text {
