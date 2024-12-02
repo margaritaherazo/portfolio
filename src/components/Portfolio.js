@@ -25,6 +25,24 @@ function Portfolio() {
       description: "A brief description of the Sete Cores project.",
       link: "https://github.com/username/sete-cores",
     },
+    {
+        img: "assets/imgs/taskmanager.jpeg",
+        title: "Sete Cores",
+        description: "A brief description of the Sete Cores project.",
+        link: "https://github.com/username/sete-cores",
+      },
+      {
+        img: "assets/imgs/ai.jpeg",
+        title: "Sete Cores",
+        description: "A brief description of the Sete Cores project.",
+        link: "https://github.com/username/sete-cores",
+      },
+      {
+        img: "assets/imgs/pokemon.jpeg",
+        title: "Sete Cores",
+        description: "A brief description of the Sete Cores project.",
+        link: "https://github.com/username/sete-cores",
+      },
    
   ];
 
