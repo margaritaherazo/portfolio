@@ -49,15 +49,15 @@ function Portfolio() {
   return (
     <section id="portfolio" className="portfolio py-5">
       <div className="container">
-        <h2 className="text-center">My Work</h2>
+        <h2 className="text-center title">My Work</h2>
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
-          slidesPerView={1} // Adjust for desktop or mobile
+          slidesPerView={1} 
           navigation
           pagination={{ clickable: true }}
           breakpoints={{
-            // Adjust slides per view for responsiveness
+            
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },

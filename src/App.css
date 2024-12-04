@@ -201,3 +201,30 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
+/* portfolio*/
+
+#portfolio {
+  margin-top: 150px;
+}
+
+.title {
+  margin-bottom: 80px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%; 
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-height: 200px;
+  object-fit: cover;
+}
