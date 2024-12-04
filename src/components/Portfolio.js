@@ -11,37 +11,37 @@ function Portfolio() {
       img: "assets/imgs/mi-ho.jpeg",
       title: "Mi-Ho Project",
       description: "A brief description of the Mi-Ho project.",
-      link: "https://github.com/username/mi-ho-project",
+      link: "https://mi-ho.com/",
     },
     {
       img: "assets/imgs/acordaselva.jpeg",
-      title: "Acorda Selva",
+      title: "Acordaselva",
       description: "A brief description of the Acorda Selva project.",
-      link: "https://github.com/username/acorda-selva",
+      link: "https://acordaselva.com/",
     },
     {
       img: "assets/imgs/setecore.jpeg",
       title: "Sete Cores",
       description: "A brief description of the Sete Cores project.",
-      link: "https://github.com/username/sete-cores",
+      link: "https://setecores.netlify.app/",
     },
     {
         img: "assets/imgs/taskmanager.jpeg",
-        title: "Sete Cores",
+        title: "Task Manager",
         description: "A brief description of the Sete Cores project.",
-        link: "https://github.com/username/sete-cores",
+        link: "https://task-manager-mh.netlify.app/",
       },
       {
         img: "assets/imgs/ai.jpeg",
-        title: "Sete Cores",
+        title: "AI image generator",
         description: "A brief description of the Sete Cores project.",
-        link: "https://github.com/username/sete-cores",
+        link: "https://ai-img-generator-app.netlify.app/",
       },
       {
         img: "assets/imgs/pokemon.jpeg",
-        title: "Sete Cores",
+        title: "Pokemon Memory Game",
         description: "A brief description of the Sete Cores project.",
-        link: "https://github.com/username/sete-cores",
+        link: "https://pokemon-memo-game.netlify.app/",
       },
    
   ];
@@ -65,7 +65,13 @@ function Portfolio() {
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
-              <div className="card">
+               <a
+                href={project.link}
+                className="card"
+                style={{ textDecoration: "none", color: "inherit" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={project.img}
                   className="card-img-top"
@@ -74,11 +80,8 @@ function Portfolio() {
                 <div className="card-body">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text">{project.description}</p>
-                  <a href={project.link} className="btn btn-primary">
-                    View Project
-                  </a>
                 </div>
-              </div>
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>
