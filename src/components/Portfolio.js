@@ -8,19 +8,19 @@ import { Navigation, Pagination } from "swiper/modules";
 function Portfolio() {
   const projects = [
     {
-      img: "assets/imgs/mi-ho.jpeg",
+      img: "assets/imgs/mi-ho.jpg",
       title: "Mi-Ho Project",
       description: "A brief description of the Mi-Ho project.",
       link: "https://mi-ho.com/",
     },
     {
-      img: "assets/imgs/acordaselva.jpeg",
+      img: "assets/imgs/flor.webp",
       title: "Acordaselva",
       description: "A brief description of the Acorda Selva project.",
       link: "https://acordaselva.com/",
     },
     {
-      img: "assets/imgs/setecore.jpeg",
+      img: "assets/imgs/setecores.jpg",
       title: "Sete Cores",
       description: "A brief description of the Sete Cores project.",
       link: "https://setecores.netlify.app/",
@@ -32,7 +32,7 @@ function Portfolio() {
         link: "https://task-manager-mh.netlify.app/",
       },
       {
-        img: "assets/imgs/ai.jpeg",
+        img: "assets/imgs/ai.jpg",
         title: "AI image generator",
         description: "A brief description of the Sete Cores project.",
         link: "https://ai-img-generator-app.netlify.app/",
