@@ -38,7 +38,7 @@ function Portfolio() {
         link: "https://ai-img-generator-app.netlify.app/",
       },
       {
-        img: "assets/imgs/pokemon.jpeg",
+        img: "assets/imgs/pokemon.jpg",
         title: "Pokemon Memory Game",
         description: "A brief description of the Sete Cores project.",
         link: "https://pokemon-memo-game.netlify.app/",
