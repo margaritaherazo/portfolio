@@ -422,8 +422,9 @@ body {
 }
 
 .contact .d-flex {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: black;
+  padding-left: 100px;
 }
 
 .contact .d-flex a {
