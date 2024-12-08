@@ -396,3 +396,41 @@ body {
   top: 50%;
   animation-delay: 15s;
 }
+
+/* contact */
+
+#contact {
+  margin-top: 100px;
+}
+
+.contact h2 {
+  margin-bottom: 100px !important;
+}
+
+.contact .form-control {
+  border: 3px solid #000;
+  border-radius: 10%;
+  background-color: transparent;
+}
+
+.contact .btn-primary {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: white;
+  border-color: white;
+}
+
+.contact .d-flex {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.contact .d-flex a {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.contact .d-flex a:hover {
+  color: white;
+}

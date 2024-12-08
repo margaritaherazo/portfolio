@@ -26,12 +26,11 @@ function Contact() {
             <div className="container">
                 <h2 className="text-center mb-4">Contact Me</h2>
                 <div className="row align-items-center">
-                    {/* Left Column: Form */}
                     <div className="col-md-6 mb-4">
                         <form onSubmit={handleSubmit}>
                             <div className="mb-3">
                                 <label htmlFor="name" className="form-label">
-                                    Your Name
+                                    Name
                                 </label>
                                 <input
                                     type="text"
@@ -45,7 +44,7 @@ function Contact() {
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="email" className="form-label">
-                                    Your Email
+                                    Email
                                 </label>
                                 <input
                                     type="email"
@@ -59,7 +58,7 @@ function Contact() {
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="message" className="form-label">
-                                    Your Message
+                                    Message
                                 </label>
                                 <textarea
                                     className="form-control"
@@ -77,39 +76,43 @@ function Contact() {
                         </form>
                     </div>
 
-                    {/* Right Column: Contact Info */}
-                    <div className="col-md-6">
-                        <div className="d-flex align-items-center mb-3">
-                            <FaEnvelope className="me-3" size={24} />
-                            <p className="mb-0">your-email@example.com</p>
-                        </div>
-                        <div className="d-flex align-items-center mb-3">
-                            <FaGithub className="me-3" size={24} />
-                            <a
-                                href="https://github.com/your-github"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-decoration-none"
-                            >
-                                GitHub
-                            </a>
-                        </div>
-                        <div className="d-flex align-items-center">
-                            <FaLinkedin className="me-3" size={24} />
-                            <a
-                                href="https://linkedin.com/in/your-linkedin"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-decoration-none"
-                            >
-                                LinkedIn
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    <div className="col-md-6 d-flex flex-column align-items-start">
+            <div className="mb-3">
+              <FaEnvelope className="me-2" />
+              <a
+                href="mailto:margarita.herazo.i@gmail.com"
+                className="text-decoration-none"
+              >
+                margarita.herazo.i@gmail.com
+              </a>
             </div>
-        </section>
-    );
+            <div className="mb-3">
+              <FaGithub className="me-2" />
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-decoration-none"
+              >
+                GitHub
+              </a>
+            </div>
+            <div className="mb-3">
+              <FaLinkedin className="me-2" />
+              <a
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-decoration-none"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Contact;
