@@ -273,3 +273,9 @@ body {
 .swiper-pagination-bullet-active {
   opacity: 1;
 }
+
+/* skills*/
+
+#skills {
+  margin-top: 100px;
+}
