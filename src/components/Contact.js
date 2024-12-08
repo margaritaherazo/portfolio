@@ -17,8 +17,18 @@ function Contact() {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        alert('Form submitted!');
+      e.preventDefault();
+    
+      fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((response) => response.json())
+        .then(() => alert('Email sent!'))
+        .catch(() => alert('Error sending email'));
     };
 
     return (
