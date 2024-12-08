@@ -278,4 +278,121 @@ body {
 
 #skills {
   margin-top: 100px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+#skills h2 {
+  margin-bottom: 50px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-wrapper {
+  position: relative;
+  height: 400px; 
+  width: 1500px;
+  overflow: hidden; 
+}
+
+
+.moving-skill {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5); 
+  position: absolute;
+  white-space: nowrap; 
+  animation: move-skill 17s linear infinite; 
+  transform: translateX(100vw); 
+}
+
+
+@keyframes move-skill {
+  0% {
+    transform: translateX(300%); 
+    opacity: 0; 
+  }
+  10% {
+    opacity: 1; 
+  }
+  50% {
+    opacity: 1; 
+  }
+  90% {
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(-200%); 
+  }
+}
+
+/* Randomize each skill's vertical position and delay */
+.moving-skill:nth-child(1) {
+  top: 10%;
+  animation-delay: 0s;
+}
+.moving-skill:nth-child(2) {
+  top: 20%;
+  animation-delay: 1s;
+}
+.moving-skill:nth-child(3) {
+  top: 30%;
+  animation-delay: 2s;
+}
+.moving-skill:nth-child(4) {
+  top: 40%;
+  animation-delay: 3s;
+}
+.moving-skill:nth-child(5) {
+  top: 50%;
+  animation-delay: 4s;
+}
+.moving-skill:nth-child(6) {
+  top: 60%;
+  animation-delay: 5s;
+}
+.moving-skill:nth-child(7) {
+  top: 70%;
+  animation-delay: 6s;
+}
+.moving-skill:nth-child(8) {
+  top: 80%;
+  animation-delay: 7s;
+}
+.moving-skill:nth-child(9) {
+  top: 10%;
+  animation-delay: 8s;
+}
+.moving-skill:nth-child(10) {
+  top: 20%;
+  animation-delay: 9s;
+}
+.moving-skill:nth-child(11) {
+  top: 70%;
+  animation-delay: 10s;
+}
+.moving-skill:nth-child(12) {
+  top: 40%;
+  animation-delay: 11s;
+}
+.moving-skill:nth-child(13) {
+  top: 0%;
+  animation-delay: 12s;
+}
+.moving-skill:nth-child(14) {
+  top: 60%;
+  animation-delay: 13s;
+}
+.moving-skill:nth-child(15) {
+  top: 80%;
+  animation-delay: 14s;
+}
+.moving-skill:nth-child(16) {
+  top: 50%;
+  animation-delay: 15s;
 }
