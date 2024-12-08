@@ -89,7 +89,7 @@ function Contact() {
             <div className="mb-3">
               <FaGithub className="me-2" />
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/margaritaherazo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-decoration-none"
@@ -100,7 +100,7 @@ function Contact() {
             <div className="mb-3">
               <FaLinkedin className="me-2" />
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/maragarita-herazo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-decoration-none"
