@@ -1,128 +1,65 @@
-import React, { useState } from 'react';
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import React from 'react';
+import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
-
-    const handleSubmit = (e) => {
-      e.preventDefault();
-    
-      fetch('http://localhost:5000/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      })
-        .then((response) => response.json())
-        .then(() => alert('Email sent!'))
-        .catch(() => alert('Error sending email'));
-    };
-
     return (
         <section id="contact" className="contact py-5">
             <div className="container">
-                <h2 className="text-center mb-4">Contact Me</h2>
                 <div className="row align-items-center">
-                    <div className="col-md-6 mb-4">
-                        <form onSubmit={handleSubmit}>
-                            <div className="mb-3">
-                                <label htmlFor="name" className="form-label">
-                                    Name
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="name"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="email" className="form-label">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    id="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="message" className="form-label">
-                                    Message
-                                </label>
-                                <textarea
-                                    className="form-control"
-                                    id="message"
-                                    name="message"
-                                    rows="4"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    required
-                                ></textarea>
-                            </div>
-                            <button type="submit" className="btn btn-primary">
-                                Send Message
-                            </button>
-                        </form>
+                   
+                    <div className="col-md-6 text-md-start text-center">
+                        <h2 className="display-4">Let's Co-create Something</h2>
                     </div>
 
-                    <div className="col-md-6 d-flex flex-column align-items-start">
-            <div className="mb-3">
-              <FaEnvelope className="me-2" />
-              <a
-                href="mailto:margarita.herazo.i@gmail.com"
-                className="text-decoration-none"
-              >
-                margarita.herazo.i@gmail.com
-              </a>
+                    
+                    <div className="col-md-6 text-md-end text-center">
+                        <div className="mb-3">
+                            <FaEnvelope className="me-2 fs-4" />
+                            <a
+                                href="mailto:margarita.herazo.i@gmail.com"
+                                className="text-decoration-none fs-5"
+                            >
+                                margarita.herazo.i@gmail.com
+                            </a>
+                        </div>
+                        <div className="mb-3">
+                            <FaGithub className="me-2 fs-4" />
+                            <a
+                                href="https://github.com/margaritaherazo"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-decoration-none fs-5"
+                            >
+                                GitHub
+                            </a>
+                        </div>
+                        <div className="mb-3">
+                            <FaLinkedin className="me-2 fs-4" />
+                            <a
+                                href="https://www.linkedin.com/in/maragarita-herazo/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-decoration-none fs-5"
+                            >
+                                LinkedIn
+                            </a>
+                        </div>
+                        <div className="mb-3">
+                            <FaWhatsapp className="me-2 fs-4" />
+                            <a
+                                href="https://wa.me/491776403557"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-decoration-none fs-5"
+                            >
+                                +49 1776403557
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="mb-3">
-              <FaGithub className="me-2" />
-              <a
-                href="https://github.com/margaritaherazo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-decoration-none"
-              >
-                GitHub
-              </a>
-            </div>
-            <div className="mb-3">
-              <FaLinkedin className="me-2" />
-              <a
-                href="https://www.linkedin.com/in/maragarita-herazo/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-decoration-none"
-              >
-                LinkedIn
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 }
 
 export default Contact;

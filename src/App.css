@@ -438,6 +438,12 @@ body {
 
 /* footer */
 
+.logo2 {
+  height: 80px;
+  align-items: center;
+  color: white;
+}
+
 .footer {
   color:white;
 }
