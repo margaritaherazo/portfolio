@@ -8,7 +8,7 @@ function Contact() {
                 <div className="row align-items-center">
                    
                     <div className="col-md-6 text-md-start text-center">
-                        <h2 className="display-4">Let's Co-create Something</h2>
+                        <h2 className="display-4">Let's Co-create Something Inspiring</h2>
                     </div>
 
                     
