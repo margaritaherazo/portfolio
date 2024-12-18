@@ -12,7 +12,7 @@ function Contact() {
                     </div>
 
                     
-                    <div className="col-md-6 text-md-end text-center">
+                    <div className="col-md-6 text-md-start text-center">
                         <div className="mb-3">
                             <FaEnvelope className="me-2 fs-4" />
                             <a

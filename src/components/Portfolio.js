@@ -15,13 +15,19 @@ function Portfolio() {
     },
     {
       img: "assets/imgs/flor.webp",
-      title: "Acordaselva",
+      title: "Acordaselva Project",
       description: "A brief description of the Acorda Selva project.",
       link: "https://acordaselva.com/",
     },
     {
+      img: "assets/imgs/verena.jpg",
+      title: "Verena Eichner Project",
+      description: "A brief description of the Sete Cores project.",
+      link: "https://pokemon-memo-game.netlify.app/",
+    },
+    {
       img: "assets/imgs/setecores.jpg",
-      title: "Sete Cores",
+      title: "Sete Cores Project",
       description: "A brief description of the Sete Cores project.",
       link: "https://setecores.netlify.app/",
     },
