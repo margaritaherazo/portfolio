@@ -1,16 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 const NavBar = () => {
+  const { t, i18n } = useTranslation();
+  const [selectedLang, setSelectedLang] = useState(i18n.language || 'en');
+
+  const handleLangSelect = (lang) => {
+    setSelectedLang(lang);
+    i18n.changeLanguage(lang);
+  };
+
   useEffect(() => {
     const starContainer = document.querySelector('.falling-stars-container');
-
     const createStar = () => {
       const star = document.createElement('div');
       star.classList.add('falling-star');
-      
-      
       const images = [
         '/assets/imgs/tech1.png',
         '/assets/imgs/tech2.png',
@@ -23,43 +29,21 @@ const NavBar = () => {
         '/assets/imgs/tech8.png',
         '/assets/imgs/tech9.png'
       ];
-    
-      
       const randomImage = images[Math.floor(Math.random() * images.length)];
-    
-      
       const img = document.createElement('img');
-      img.src = randomImage; 
+      img.src = randomImage;
       img.alt = 'Falling Star';
-      img.style.width = '100%'; 
-      img.style.height = '100%'; 
-    
-      
+      img.style.width = '100%';
+      img.style.height = '100%';
       star.style.left = `${Math.random() * 100}%`;
       star.style.top = `${Math.random() * 100}%`;
-    
-      
       star.appendChild(img);
-    
-      
       starContainer.appendChild(star);
-    
-      
-      setTimeout(() => star.remove(), 5000); 
+      setTimeout(() => star.remove(), 5000);
     };
-    
-    
     const starInterval = setInterval(createStar, 500);
-
-    
     return () => clearInterval(starInterval);
   }, []);
-
-  const [selectedLang, setSelectedLang] = useState('en');
-
-  const handleLangSelect = (lang) => {
-    setSelectedLang(lang);
-  };
 
   return (
     <Navbar expand="lg" className="navbar">
@@ -93,7 +77,7 @@ const NavBar = () => {
             </span>
           </div>
           <Nav.Link as={Link} to="contact" smooth={true} duration={500}>
-            <Button variant="primary" className="ml-3">Contact</Button>
+            <Button variant="primary" className="ml-3">{t('navbar.contact')}</Button>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
