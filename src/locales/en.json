@@ -45,6 +45,25 @@
           "description": "An engaging memory card game featuring Pokémon characters, designed to test and improve memory skills."
         }
       }
-    }
+    },
+    "skills": {
+    "title": "Skills",
+    "html": "HTML",
+    "css": "CSS",
+    "javascript": "JavaScript",
+    "react": "React",
+    "nodejs": "Node.js",
+    "git": "Git",
+    "bootstrap": "Bootstrap",
+    "jquery": "jQuery",
+    "uiux": "UI & UX Design",
+    "figma": "Figma",
+    "problemSolving": "Problem-solving",
+    "communication": "Communication",
+    "timeManagement": "Time Management",
+    "teamwork": "Teamwork",
+    "empathy": "Empathy",
+    "adaptability": "Adaptability"
+  }
   }
   

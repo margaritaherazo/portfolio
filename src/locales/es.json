@@ -45,6 +45,25 @@
           "description": "Un juego de cartas de memoria cautivador con personajes de Pokémon, diseñado para probar y mejorar habilidades de memoria."
         }
       }
-    }
+    },
+    "skills": {
+        "title": "Habilidades",
+        "html": "HTML",
+        "css": "CSS",
+        "javascript": "JavaScript",
+        "react": "React",
+        "nodejs": "Node.js",
+        "git": "Git",
+        "bootstrap": "Bootstrap",
+        "jquery": "jQuery",
+        "uiux": "Diseño UI y UX",
+        "figma": "Figma",
+        "problemSolving": "Resolución de Problemas",
+        "communication": "Comunicación",
+        "timeManagement": "Gestión del Tiempo",
+        "teamwork": "Trabajo en Equipo",
+        "empathy": "Empatía",
+        "adaptability": "Adaptabilidad"
+      }
   }
   
