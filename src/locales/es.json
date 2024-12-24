@@ -10,15 +10,15 @@
     "about": {
       "title1": "Diseñadora Web",
       "title2": "Desarrolladora Creativa",
-      "description": "Creando sitios web profesionales con un toque personal y relajado. He trabajado en diferentes países, desde branding y diseño hasta desarrollo y programación.",
-      "location": "Con sede en Bahía, Brasil"
+      "description": "Creando paginas web profesionales con un toque personal y relajado. He trabajado en diferentes países, desde branding y diseño hasta desarrollo y programación.",
+      "location": "Basada en Bahía, Brasil"
     },
     "portfolio": {
       "title": "Mi Trabajo",
       "projects": {
         "miho": {
           "title": "Proyecto Mi-Ho",
-          "description": "Un sitio web que muestra las ofertas de MI°HO, con un enfoque en la experiencia del usuario y el diseño. Creado con React y Bootstrap."
+          "description": "Una aplicación web que muestra las ofertas de MI°HO, con un enfoque en la experiencia del usuario y el diseño. Creado con React y Bootstrap."
         },
         "acordaselva": {
           "title": "Proyecto Acordaselva",
@@ -64,6 +64,14 @@
         "teamwork": "Trabajo en Equipo",
         "empathy": "Empatía",
         "adaptability": "Adaptabilidad"
+      },
+      "contact": {
+        "title": "Creeemos algo Inspirador juntos"
+      },
+      "footer": {
+        "title": "Margarita Herazo",
+        "subtitle": "Portafolio ©2024",
+        "text": "Diseño * Desarrollo * Branding"
       }
   }
   
