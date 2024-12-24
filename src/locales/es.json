@@ -10,8 +10,41 @@
     "about": {
       "title1": "Diseñadora Web",
       "title2": "Desarrolladora Creativa",
-      "description": "Creando sitios web profesionales con un toque personal y relajado, he trabajado en diferentes países, desde branding y diseño hasta desarrollo y programación.",
-      "location": "Con base en Bahía, Brasil"
+      "description": "Creando sitios web profesionales con un toque personal y relajado. He trabajado en diferentes países, desde branding y diseño hasta desarrollo y programación.",
+      "location": "Con sede en Bahía, Brasil"
+    },
+    "portfolio": {
+      "title": "Mi Trabajo",
+      "projects": {
+        "miho": {
+          "title": "Proyecto Mi-Ho",
+          "description": "Un sitio web que muestra las ofertas de MI°HO, con un enfoque en la experiencia del usuario y el diseño. Creado con React y Bootstrap."
+        },
+        "acordaselva": {
+          "title": "Proyecto Acordaselva",
+          "description": "Una granja familiar dedicada a prácticas agroecológicas, regeneración del suelo y producción de plántulas orgánicas."
+        },
+        "verena": {
+          "title": "Proyecto Verena Eichner",
+          "description": "Reconstrucción de un sitio antiguo para hacerlo más moderno. Sitio web de coaching holístico que integra Yoga y Ayurveda."
+        },
+        "setecores": {
+          "title": "Proyecto Sete Cores",
+          "description": "Un proyecto en Bahía, Brasil, enfocado en la rejuvenecimiento de la tierra a través de la reforestación, cultivo de cacao e iniciativas de vida sostenible."
+        },
+        "taskmanager": {
+          "title": "Gestor de Tareas",
+          "description": "Una aplicación web diseñada para ayudar a los usuarios a gestionar y organizar sus tareas de manera eficiente. Construido con React y Redux Toolkit."
+        },
+        "ai": {
+          "title": "Generador de Imágenes AI",
+          "description": "Una aplicación web que genera imágenes usando la API de OpenAI, permitiendo a los usuarios crear visuales impulsados por IA."
+        },
+        "pokemon": {
+          "title": "Juego de Memoria Pokémon",
+          "description": "Un juego de cartas de memoria cautivador con personajes de Pokémon, diseñado para probar y mejorar habilidades de memoria."
+        }
+      }
     }
   }
   

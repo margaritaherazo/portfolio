@@ -10,8 +10,41 @@
     "about": {
       "title1": "Web Designer",
       "title2": "Creative Developer",
-      "description": "Creating professional Websites with a personal and easygoing touch, I have been working in different countries from branding and design to developing and coding.",
+      "description": "Creating professional Websites with a personal and easy-going touch. I have been working in different countries, from branding and design to developing and coding.",
       "location": "Based in Bahia, Brazil"
+    },
+    "portfolio": {
+      "title": "My Work",
+      "projects": {
+        "miho": {
+          "title": "Mi-Ho Project",
+          "description": "A website showcasing MI°HO's offerings, with a focus on user experience and design. Created with React and Bootstrap."
+        },
+        "acordaselva": {
+          "title": "Acordaselva Project",
+          "description": "A family-run farm dedicated to agroecological practices, soil regeneration, and organic seedling production."
+        },
+        "verena": {
+          "title": "Verena Eichner Project",
+          "description": "Rebuilt an old website to make it more modern. Holistic health coaching website integrating Yoga and Ayurveda."
+        },
+        "setecores": {
+          "title": "Sete Cores Project",
+          "description": "A project in Bahia, Brazil, focused on land rejuvenation through reforestation, cacao cultivation, and sustainable living initiatives."
+        },
+        "taskmanager": {
+          "title": "Task Manager",
+          "description": "A web application designed to help users manage and organize their tasks efficiently. Built with React and Redux Toolkit."
+        },
+        "ai": {
+          "title": "AI Image Generator",
+          "description": "A web application that generates images using OpenAI's API, allowing users to create AI-powered visuals."
+        },
+        "pokemon": {
+          "title": "Pokemon Memory Game",
+          "description": "An engaging memory card game featuring Pokémon characters, designed to test and improve memory skills."
+        }
+      }
     }
   }
   
